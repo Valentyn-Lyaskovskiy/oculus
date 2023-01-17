@@ -1,0 +1,157 @@
+@font-face{
+  font-family: 'Helvetica', sans-serif;
+  src: url(../fonts/helvetica.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Helvetica-Bold', sans-serif;
+  src: url(../fonts/helvetica-bold.woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5C5C5E;
+}
+
+.container{
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*     Header    */
+
+.header{
+  border-bottom: 1px solid #CACAD6;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.menu{
+  display: flex;
+  gap: 0 20px;
+}
+
+.basket{
+  position: relative;
+}
+
+.basket_on span{
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color:#fff;
+  background:#000;
+  border-radius: 50%;
+  bottom: 0;
+  right: -2px;
+}
+
+/*     Main    */
+
+.section-top{
+  padding-top: 230px;
+}
+
+.title:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.title{
+  font-size: 96px;
+  line-height: 115%;
+}
+
+.subtitle:not(:last-child){
+  margin-bottom: 5px;
+}
+
+.subtitle{
+  font-size: 36px;
+  line-height: 114%;
+}
+
+.text, 
+.buy-text{
+  font-size: 13px;
+  line-height: 115%;
+}
+
+.text{
+  margin-bottom: 50px;
+}
+
+.section-top{
+  min-height: calc(100vh - 81px);
+  background: url('../images/main-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.buy-text{
+  margin-top: 10px;
+}
+
+.buy-btn{
+  cursor: pointer;
+  border: 0;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  text-transform: uppercase;
+  padding: 0;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 113%;
+  padding: 1px;
+}
+
+.buy-btn__text{
+  color: #F6F4F5;
+  padding: 20px 110px;
+}
+
+.buy-btn__price{
+  background-color: #F6F4F5;
+  padding: 20px 105px;
+}
