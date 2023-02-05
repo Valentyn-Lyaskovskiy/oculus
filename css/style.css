@@ -105,7 +105,11 @@ button {
 /*     Main    */
 
 .section-top {
-  padding-top: 230px;
+  min-height: calc(100vh - 81px);
+  background-image: url(../images/main-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .title:not(:last-child) {
@@ -113,6 +117,7 @@ button {
 }
 
 .title {
+  padding-top: 16%;
   font-size: 96px;
   line-height: 115%;
   font-weight: 400;
@@ -135,14 +140,6 @@ button {
 
 .text {
   margin-bottom: 50px;
-}
-
-.section-top {
-  min-height: calc(100vh - 81px);
-  background: url("../images/main-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
 }
 
 .buy-text {
@@ -171,6 +168,10 @@ button {
   background-color: #f6f4f5;
   padding: 20px 105px;
   color: #5c5c5e;
+}
+
+.buy-text {
+  padding-bottom: 28%; /* 454px/16 */
 }
 
 /*   Features   */
@@ -225,6 +226,16 @@ button {
 
 .features__btn-item_active {
   color: #070707;
+}
+
+.features__video button {
+  margin-left: 20px;
+}
+
+.features__video span {
+  font-size: 13px;
+  line-height: 115.4%; /* 15px/13 */
+  color: #f6f4f5;
 }
 
 .features__video {
