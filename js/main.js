@@ -1,8 +1,9 @@
 "use strict";
+
 const buttons = document.querySelectorAll(".features__btn-item");
 const contents = document.querySelectorAll(".features__content-item");
 
-const openBtnClass = (e) => {
+const openClass = (e) => {
   const clickedBtn = e.target;
   const clickedBtnAttr = clickedBtn.dataset.btn;
 
@@ -20,5 +21,5 @@ const openBtnClass = (e) => {
 };
 
 buttons.forEach((item) => {
-  item.addEventListener("click", openBtnClass);
+  item.addEventListener("click", openClass);
 });
