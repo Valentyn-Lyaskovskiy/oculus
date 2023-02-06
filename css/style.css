@@ -184,6 +184,7 @@ button {
   position: relative;
   display: grid;
   grid-template-columns: 300px auto;
+  min-height: 300px;
 }
 
 .features__titles {
@@ -260,12 +261,14 @@ button {
   gap: 40px;
   opacity: 0;
   position: absolute;
+  transition: opacity .5s ease;
 }
 
 .features__content-box h3 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 24px;
+  line-height: 117%; /* 28px/24 */
 }
 
 .features__content-item_img {
@@ -276,3 +279,4 @@ button {
 .features__content-item_active {
   opacity: 1;
 }
+
