@@ -13,10 +13,14 @@ const openClass = (e) => {
   });
 
   contents.forEach((item) => {
+    // First option
     item.classList.remove("features__content-item_active");
-    document
-      .querySelector(`#${clickedBtnAttr}`)
-      .classList.add("features__content-item_active");
+    if (item.id === clickedBtnAttr) {
+      item.classList.add("features__content-item_active");
+    }
+    //  Second option
+    // document.querySelector(`#${clickedBtnAttr}`)
+    // .classList.add("features__content-item_active");
   });
 };
 
