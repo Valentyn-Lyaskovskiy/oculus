@@ -201,7 +201,7 @@ button {
   font-weight: 400; /* 18/16px   Reusable title*/
 }
 
-.features__text, 
+.features__text,
 .games__desc-title {
   max-width: 330px;
   font-size: 36px;
@@ -284,38 +284,38 @@ button {
 
 /*  Games   */
 
-.games__title:not(:last-child){
+.games__title:not(:last-child) {
   margin-bottom: 50px;
 }
 
-.games__desc-title:not(:last-child){
+.games__desc-title:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.games__desc-text:not(:last-child){
+.games__desc-text:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.games__link{
+.games__link {
   text-transform: uppercase;
   display: inline-block;
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 16px 48px;
-  border: 1px solid #BC10D8;
+  border: 1px solid #bc10d8;
 }
 
-.games{
-margin-bottom: 100px;
+.games {
+  margin-bottom: 100px;
 }
 
-.games__wrapper{
+.games__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -326,15 +326,15 @@ margin-bottom: 100px;
 
 .games__link {
 }
-.games__item>*:not(:last-child) {
+.games__item > *:not(:last-child) {
   margin-bottom: 10px;
 }
 
 .games__img {
 }
 
-.games__item{
-  border: 1px solid #BC10D8;
+.games__item {
+  border: 1px solid #bc10d8;
   padding: 20px 10px 18px;
   display: flex;
   flex-direction: column;
@@ -345,8 +345,53 @@ margin-bottom: 100px;
 }
 
 .games__item-link {
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: auto;
+}
+
+/* Buy  */
+
+.buy {
+  position: relative;
+  text-align: center;
+  margin-bottom: 110px;
+  overflow-x: hidden;
+}
+
+.buy__img {
+  margin-bottom: 30px;
+}
+
+.buy__btn {
+  margin: 0 auto;
+}
+
+.buy__bg {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 400px;
+  line-height: 400px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  opacity: 0.1;
+  position: absolute;
+  z-index: -1;
+  animation: running-line 5s linear 1s infinite;
+}
+
+@keyframes running-line {
+  from {
+    transform: translateX(100%);
+    transform-origin: left center;
+  }
+  to {
+    transform: translateX(-100%);
+    transform-origin: right center;
+  }
 }
