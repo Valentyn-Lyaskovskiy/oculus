@@ -171,7 +171,8 @@ button {
 }
 
 .buy-text {
-  padding-bottom: 28%; /* 454px/16 */
+  padding-bottom: 28%;
+  /* 454px/16  */
 }
 
 /*   Features   */
@@ -197,6 +198,7 @@ button {
 }
 
 .section-title {
+  text-transform: uppercase;
   line-height: 113%;
   font-weight: 400; /* 18/16px   Reusable title*/
 }
@@ -324,13 +326,8 @@ button {
   padding-right: 5px;
 }
 
-.games__link {
-}
 .games__item > *:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.games__img {
 }
 
 .games__item {
@@ -364,6 +361,10 @@ button {
   margin-bottom: 30px;
 }
 
+.buy__text {
+  padding-bottom: 0;
+}
+
 .buy__btn {
   margin: 0 auto;
 }
@@ -394,4 +395,40 @@ button {
     transform: translateX(-100%);
     transform-origin: right center;
   }
+}
+
+/* Box  */
+
+.box {
+  padding-bottom: 100px;
+}
+
+.box__wrapper {
+  display: grid;
+  gap: 20px 30px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.box__item_one {
+  grid-row: 1/-1;
+}
+
+.box__title {
+  margin-bottom: 49px;
+}
+
+.box__item-title {
+  font-size: 36px;
+  line-height: 114%; /* 41px/36 */
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.box__item-text {
+  margin-top: 10px;
 }
