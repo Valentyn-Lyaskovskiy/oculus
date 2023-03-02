@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   src: url(../fonts/helvetica.woff2);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Helvetica-Bold", sans-serif;
+  font-family: 'Helvetica-Bold', sans-serif;
   src: url(../fonts/helvetica-bold.woff2);
   font-style: normal;
   font-weight: 700;
@@ -36,7 +36,7 @@ img {
 }
 
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 112.5%; /* 18/16 */
@@ -53,6 +53,7 @@ button {
   background: transparent;
   line-height: 113%;
 }
+
 .container {
   max-width: 1220px;
   padding: 0 10px;
@@ -222,7 +223,7 @@ button {
 .features__btn-item {
   display: block;
   font-weight: 700;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 16px;
   color: #5c5c5e;
   background: transparent;
@@ -265,7 +266,7 @@ button {
   gap: 40px;
   opacity: 0;
   position: absolute;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .features__content-box h3 {
@@ -301,16 +302,20 @@ button {
 .games__link {
   text-transform: uppercase;
   display: inline-block;
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 112.5%; /* 18px/16 */
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%)
+    1;
   background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   padding: 16px 48px;
-  border: 1px solid #bc10d8;
 }
 
 .games {
@@ -331,7 +336,9 @@ button {
 }
 
 .games__item {
-  border: 1px solid #bc10d8;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%)
+    1;
   padding: 20px 10px 18px;
   display: flex;
   flex-direction: column;
@@ -345,6 +352,8 @@ button {
   background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   margin-top: auto;
 }
 
@@ -370,7 +379,7 @@ button {
 }
 
 .buy__bg {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 400px;
@@ -392,7 +401,7 @@ button {
     transform-origin: left center;
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-120%);
     transform-origin: right center;
   }
 }
@@ -418,7 +427,7 @@ button {
   margin-bottom: 49px;
 }
 
-.box__item-title {
+.box-item-title {
   font-size: 36px;
   line-height: 114%; /* 41px/36 */
   text-transform: uppercase;
@@ -440,9 +449,110 @@ button {
 }
 
 .metaverse__wrapper {
-  background: url("../images/Metaverse.jpg");
+  background: url('../images/Metaverse.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 500px;
+}
+/* Promo */
+
+.promo {
+  margin-bottom: 100px;
+}
+
+.promo__wrapper {
+  position: relative;
+  background: url('../images/Metaverse.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.promo__btn {
+  width: 53px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  border-radius: 50%;
+  font-family: inherit;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* ACCESSORIES */
+
+.accessories {
+  margin-bottom: 100px;
+}
+
+.accessories__title {
+  margin-bottom: 30px;
+}
+
+.accessories__item-title {
+  margin-bottom: 30px;
+}
+
+.accessories__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.access-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 18px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%)
+    1;
+}
+
+.access-item__title {
+  font-size: 24px;
+  line-height: 117%; /* 28px/24 */
+  color: #070707;
+  margin-bottom: 10px;
+  font-weight: 400;
+  min-height: 67px;
+}
+
+.access-item__text {
+  margin-bottom: 42px;
+}
+
+.access-item img {
+  margin-bottom: 10px;
+}
+
+.access-item__price {
+  line-height: 118.75%; /* 19px/16 */
+  color: #070707;
+  margin-bottom: 19px;
+  margin-top: auto;
+}
+
+.access-item__btn {
+  color: #070707;
+  font-family: 'Helvetica';
+  line-height: 118.75%;
+  /* 19px/16 */
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%)
+    1;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 6px 80px 5px 80px;
+  width: 100%;
 }
