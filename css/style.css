@@ -432,3 +432,17 @@ button {
 .box__item-text {
   margin-top: 10px;
 }
+
+/* Metaverse  */
+
+.metaverse {
+  margin-bottom: 100px;
+}
+
+.metaverse__wrapper {
+  background: url("../images/Metaverse.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
