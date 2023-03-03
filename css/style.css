@@ -571,10 +571,10 @@ button {
   margin-bottom: 10px;
 }
 
-.contacts__text{
+.contacts__text {
   font-size: 13px;
   line-height: 115.384615%; /* 15px/13 */
-  color: #5C5C5E;
+  color: #5c5c5e;
 }
 
 .contacts__wrapper {
@@ -583,19 +583,19 @@ button {
   justify-content: space-between;
 }
 
-.contacts__wrapper-form{
+.contacts__wrapper-form {
   flex-basis: 600px;
 }
 
-.contacts__form{
+.contacts__form {
   position: relative;
   margin-bottom: 10px;
 }
 
-.contacts__input{
+.contacts__input {
   border: none;
   width: 100%;
-  border-bottom:#cacad6 1px solid;
+  border-bottom: #cacad6 1px solid;
   padding: 22px 70px 22px 0;
 }
 
@@ -605,14 +605,36 @@ button {
   color: #cacad6;
 }
 
-.contacts__btn{
+.contacts__btn {
   position: absolute;
   right: 0;
   width: 50px;
   height: 50px;
-  background: #CACAD6;
+  background: #cacad6;
   border-radius: 50%;
-  color: #5C5C5E;
+  color: #5c5c5e;
   font-weight: 700;
   bottom: 5px;
+}
+
+/* Footer   */
+
+.footer {
+  margin-bottom: 44px;
+  border-bottom: 1px solid #cacad6;
+  border-top: 1px solid #cacad6;
+  padding: 30px 0;
+}
+
+.footer__social {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.footer__menu-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
 }
