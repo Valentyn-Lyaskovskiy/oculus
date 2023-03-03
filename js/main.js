@@ -1,5 +1,5 @@
 'use strict';
-alert('Branch!');
+
 const buttons = document.querySelectorAll('.features__btn-item');
 const contents = document.querySelectorAll('.features__content-item');
 
