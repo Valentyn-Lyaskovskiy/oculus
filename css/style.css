@@ -568,15 +568,51 @@ button {
   font-size: 24px;
   line-height: 116.666667%; /* 28px/24 */
   color: #070707;
+  margin-bottom: 10px;
+}
+
+.contacts__text{
+  font-size: 13px;
+  line-height: 115.384615%; /* 15px/13 */
+  color: #5C5C5E;
 }
 
 .contacts__wrapper {
   display: flex;
   align-items: end;
+  justify-content: space-between;
+}
+
+.contacts__wrapper-form{
+  flex-basis: 600px;
+}
+
+.contacts__form{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.contacts__input{
+  border: none;
+  width: 100%;
+  border-bottom:#cacad6 1px solid;
+  padding: 22px 70px 22px 0;
 }
 
 .contacts__input::placeholder {
   font-size: 13px;
   line-height: 115.384615%; /* 15px/13 */
   color: #cacad6;
+}
+
+.contacts__btn{
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #CACAD6;
+  border-radius: 50%;
+  color: #5C5C5E;
+  font-weight: 700;
+  bottom: 5px;
 }
