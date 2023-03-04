@@ -27,3 +27,9 @@ const openClass = (e) => {
 buttons.forEach((item) => {
   item.addEventListener('click', openClass);
 });
+
+const burgerIcon = document.querySelector('.burger');
+const changeIcon = function () {
+  burgerIcon.classList.toggle('burger_open');
+};
+burgerIcon.addEventListener('click', changeIcon);

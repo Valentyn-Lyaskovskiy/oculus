@@ -638,3 +638,18 @@ button {
 .menu__link:hover {
   text-decoration: underline;
 }
+
+/*   Burger  */
+
+.burger {
+  position: absolute;
+  width: 30px;
+  height: 14px;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: none;
+}
