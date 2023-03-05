@@ -33,3 +33,9 @@ const changeIcon = function () {
   burgerIcon.classList.toggle('burger_open');
 };
 burgerIcon.addEventListener('click', changeIcon);
+
+const nav = document.querySelector('.nav');
+const changeNav = function () {
+  nav.classList.toggle('nav_active');
+};
+burgerIcon.addEventListener('click', changeNav);

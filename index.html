@@ -1,449 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Oculus</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter:700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <link rel="icon" href="images/logo.svg" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <ul class="menu">
-            <li class="menu__list"><a href="#" class="menu__link">SHOP</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">GAMES</a></li>
-            <li class="menu__list">
-              <a href="#" class="menu__link">METAVERSE</a>
-            </li>
-          </ul>
-          <a href="#" class="logo">
-            <img src="images/logo.svg" alt="Logo" />
-          </a>
-          <a href="#" class="basket basket_on">
-            <img src="images/basket.svg" alt="Logo" />
-            <span>1</span>
-          </a>
-        </nav>
-        <div class="burger" title="Click!">
-          <span></span><span></span><span></span>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Oculus</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <link rel="icon" href="images/logo.svg" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__list"><a href="#" class="menu__link">SHOP</a></li>
+          <li class="menu__list"><a href="#" class="menu__link">GAMES</a></li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">METAVERSE</a>
+          </li>
+        </ul>
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Logo" />
+        </a>
+        <a href="#" class="basket basket_on">
+          <img src="images/basket.svg" alt="Logo" />
+          <span>1</span>
+        </a>
+      </nav>
+      <div class="burger" title="Click!">
+        <span></span><span></span><span></span>
       </div>
-    </header>
-    <!-- 
-    <main class="main">
-      <section class="section-top">
-        <div class="container">
-          <h1 class="title">Meta Quest 2</h1>
-          <p class="subtitle">Get an Elite Strap free</p>
-          <p class="text">
-            For a limited time only, save $59.99 USD. Offer ends 1/19/23
-          </p>
-          <button class="buy-btn">
-            <span class="buy-btn__text">BUY NOW</span>
-            <span class="buy-btn__price">399,99 USD</span>
-          </button>
-          <p class="buy-text">Meta Quest 2 is for ages 13+</p>
-        </div>
-      </section>
+    </div>
+  </header>
 
-      <section class="features">
-        <div class="features__container container">
-          <div class="features__titles">
-            <h2 class="features__title section-title">PRODUCT FEATURES</h2>
-            <p class="features__text">EASY TO SET UP AND SAFE TO USE</p>
-          </div>
-          <div class="features__tabs">
-            <div class="features__btn">
-              <button
-                class="features__btn-item features__btn-item_active"
-                data-btn="content-1"
-              >
-                01 Graphics
-              </button>
-              <button class="features__btn-item" data-btn="content-2">
-                02 Controls
-              </button>
-              <button class="features__btn-item" data-btn="content-3">
-                03 Processor
-              </button>
-              <button class="features__btn-item" data-btn="content-4">
-                04 Set up your play area
-              </button>
-              <button class="features__btn-item" data-btn="content-5">
-                05 Guardian activity
-              </button>
-              <button class="features__btn-item" data-btn="content-6">
-                06 Headset casting
-              </button>
-            </div>
-            <div class="features__content">
-              <div
-                class="features__content-item features__content-item_active"
-                id="content-1"
-              >
-                <img
-                  class="features__content-item_img"
-                  src="images/features-content.jpg"
-                  alt="Oculus"
-                />
-                <div class="features__content-box">
-                  <h3>Graphics</h3>
-                  <p>
-                    With 1832 x 1920 pixels per eye everything from multiplayer
-                    games and productivity apps to 360 0 videos look beyond
-                    incredible
-                  </p>
-                </div>
-                <div class="features__video">
-                  <button>
-                    <img src="images/Play.svg" alt="Play icon" />
-                  </button>
-                  <span>Watch the video</span>
-                </div>
-              </div>
-              <div class="features__content-item" id="content-2">
-                <img
-                  width="580"
-                  height="300"
-                  class="features__content-item_img"
-                  src="images/features-content-2.jpg"
-                  alt="Oculus"
-                />
-                <div class="features__content-box">
-                  <h3>Graphics</h3>
-                  <p>
-                    With 1832 x 1920 pixels per eye everything from multiplayer
-                    games and productivity apps to 360 0 videos look beyond
-                    incredible
-                  </p>
-                </div>
-                <div class="features__video">
-                  <button>
-                    <img src="images/Play.svg" alt="Play icon" />
-                  </button>
-                  <span>Watch the video</span>
-                </div>
-              </div>
-              <div class="features__content-item" id="content-3">
-                <img
-                  class="features__content-item_img"
-                  src="images/features-content.jpg"
-                  alt="Oculus"
-                />
-                <div class="features__content-box">
-                  <h3>Graphics</h3>
-                  <p>
-                    With 1832 x 1920 pixels per eye everything from multiplayer
-                    games and productivity apps to 360 0 videos look beyond
-                    incredible
-                  </p>
-                </div>
-                <div class="features__video">
-                  <button>
-                    <img src="images/Play.svg" alt="Play icon" />
-                  </button>
-                  <span>Watch the video</span>
-                </div>
-              </div>
-              <div class="features__content-item" id="content-4">
-                <img
-                  width="580"
-                  height="300"
-                  class="features__content-item_img"
-                  src="images/features-content-2.jpg"
-                  alt="Oculus"
-                />
-                <div class="features__content-box">
-                  <h3>Graphics</h3>
-                  <p>
-                    With 1832 x 1920 pixels per eye everything from multiplayer
-                    games and productivity apps to 360 0 videos look beyond
-                    incredible
-                  </p>
-                </div>
-                <div class="features__video">
-                  <button>
-                    <img src="images/Play.svg" alt="Play icon" />
-                  </button>
-                  <span>Watch the video</span>
-                </div>
-              </div>
-              <div class="features__content-item" id="content-5">
-                <img
-                  class="features__content-item_img"
-                  src="images/features-content.jpg"
-                  alt="Oculus"
-                />
-                <div class="features__content-box">
-                  <h3>Graphics</h3>
-                  <p>
-                    With 1832 x 1920 pixels per eye everything from multiplayer
-                    games and productivity apps to 360 0 videos look beyond
-                    incredible
-                  </p>
-                </div>
-                <div class="features__video">
-                  <button>
-                    <img src="images/Play.svg" alt="Play icon" />
-                  </button>
-                  <span>Watch the video</span>
-                </div>
-              </div>
-              <div class="features__content-item" id="content-6">
-                <img
-                  width="580"
-                  height="300"
-                  class="features__content-item_img"
-                  src="images/features-content-2.jpg"
-                  alt="Oculus"
-                />
-                <div class="features__content-box">
-                  <h3>Graphics</h3>
-                  <p>
-                    With 1832 x 1920 pixels per eye everything from multiplayer
-                    games and productivity apps to 360 0 videos look beyond
-                    incredible
-                  </p>
-                </div>
-                <div class="features__video">
-                  <button>
-                    <img src="images/Play.svg" alt="Play icon" />
-                  </button>
-                  <span>Watch the video</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="games">
-        <div class="games__container container">
-          <h2 class="games__title section-title">GAMES</h2>
-          <div class="games__wrapper">
-            <div class="games__desc">
-              <p class="games__desc-title">It’s all fun and games</p>
-              <p class="games__desc-text">
-                Discover new adventures, master epic challenges or revisit
-                classic moments in your favourite games and experiences
-              </p>
-              <a href="#" class="games__link">SEE ALL GAMES</a>
-            </div>
-            <div class="games__item">
-              <img
-                class="games__img"
-                src="images/games-1.jpg"
-                alt="A game picture"
-              />
-              <h3 class="games__item-title">Blade & Sorcery: Nomad</h3>
-              <p class="games__item-text">
-                Step into a medieval fantasy <br />sandbox that uses phisics to
-                serve up some of the most realistic combat in VR
-              </p>
-              <a class="games__item-link">see more</a>
-            </div>
-            <div class="games__item">
-              <img
-                class="games__img"
-                src="images/games-2.jpg"
-                alt="A game picture"
-              />
-              <h3 class="games__item-title">Population: One</h3>
-              <p class="games__item-text">
-                Climb anything. Fight everywhere. Experience battle royale only
-                possible in VR
-              </p>
-              <a class="games__item-link">see more</a>
-            </div>
-            <div class="games__item">
-              <img
-                class="games__img"
-                src="images/games-3.jpg"
-                alt="A game picture"
-              />
-              <h3 class="games__item-title">Supernatural</h3>
-              <p class="games__item-text">
-                Box, Flow, Meditate and Stretch with real coaches in stunning
-                destinations from around the world. Enjoy new workouts every
-                day.
-              </p>
-              <a class="games__item-link">see more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-         -->
-
-    <!-- <div class="buy"> -->
-    <!-- <div class="container"> -->
-    <!-- <p class="buy__bg">OCULUS</p>
-        <img class="buy__img" src="images/mask.png" alt="Oculus mask" />
-        <button class="buy__btn buy-btn">
+  <main class="main">
+    <section class="section-top">
+      <div class="container">
+        <h1 class="title">Meta Quest 2</h1>
+        <p class="subtitle">Get an Elite Strap free</p>
+        <p class="text">
+          For a limited time only, save $59.99 USD. Offer ends 1/19/23
+        </p>
+        <button class="buy-btn">
           <span class="buy-btn__text">BUY NOW</span>
           <span class="buy-btn__price">399,99 USD</span>
         </button>
-        <p class="buy__text buy-text">Meta Quest 2 is for ages 13+</p> -->
-    <!-- </div> -->
-    <!-- </div>
-      <section class="box">
-        <div class="container">
-          <h2 class="box__title section-title">in the box</h2>
-          <div class="box__wrapper">
-            <div class="box__item box__item_one">
-              <img src="images/box-1.jpg" alt="Oculus kit" />
-              <p class="box__item-text">VR Headset</p>
+        <p class="buy-text">Meta Quest 2 is for ages 13+</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__container container">
+        <div class="features__titles">
+          <h2 class="features__title section-title">PRODUCT FEATURES</h2>
+          <p class="features__text">EASY TO SET UP AND SAFE TO USE</p>
+        </div>
+        <div class="features__tabs">
+          <div class="features__btn">
+            <button class="features__btn-item features__btn-item_active" data-btn="content-1">
+              01 Graphics
+            </button>
+            <button class="features__btn-item" data-btn="content-2">
+              02 Controls
+            </button>
+            <button class="features__btn-item" data-btn="content-3">
+              03 Processor
+            </button>
+            <button class="features__btn-item" data-btn="content-4">
+              04 Set up your play area
+            </button>
+            <button class="features__btn-item" data-btn="content-5">
+              05 Guardian activity
+            </button>
+            <button class="features__btn-item" data-btn="content-6">
+              06 Headset casting
+            </button>
+          </div>
+          <div class="features__content">
+            <div class="features__content-item features__content-item_active" id="content-1">
+              <img class="features__content-item_img" src="images/features-content.jpg" alt="Oculus" />
+              <div class="features__content-box">
+                <h3>Graphics</h3>
+                <p>
+                  With 1832 x 1920 pixels per eye everything from multiplayer
+                  games and productivity apps to 360 0 videos look beyond
+                  incredible
+                </p>
+              </div>
+              <div class="features__video">
+                <button>
+                  <img src="images/Play.svg" alt="Play icon" />
+                </button>
+                <span>Watch the video</span>
+              </div>
             </div>
-            <div class="box__item">
-              <img src="images/box-2.jpg" alt="Oculus kit" />
-              <p class="box__item-text">Two Touch Controllers & AA Batteries</p>
+            <div class="features__content-item" id="content-2">
+              <img width="580" height="300" class="features__content-item_img" src="images/features-content-2.jpg"
+                alt="Oculus" />
+              <div class="features__content-box">
+                <h3>Graphics</h3>
+                <p>
+                  With 1832 x 1920 pixels per eye everything from multiplayer
+                  games and productivity apps to 360 0 videos look beyond
+                  incredible
+                </p>
+              </div>
+              <div class="features__video">
+                <button>
+                  <img src="images/Play.svg" alt="Play icon" />
+                </button>
+                <span>Watch the video</span>
+              </div>
             </div>
-            <div class="box__item">
-              <p class="box__item-title box-item-title">What's included</p>
+            <div class="features__content-item" id="content-3">
+              <img class="features__content-item_img" src="images/features-content.jpg" alt="Oculus" />
+              <div class="features__content-box">
+                <h3>Graphics</h3>
+                <p>
+                  With 1832 x 1920 pixels per eye everything from multiplayer
+                  games and productivity apps to 360 0 videos look beyond
+                  incredible
+                </p>
+              </div>
+              <div class="features__video">
+                <button>
+                  <img src="images/Play.svg" alt="Play icon" />
+                </button>
+                <span>Watch the video</span>
+              </div>
             </div>
-            <div class="box__item">
-              <img src="images/box-3.jpg" alt="Oculus kit" />
-              <p class="box__item-text">Charging Cable & Power Adapter</p>
+            <div class="features__content-item" id="content-4">
+              <img width="580" height="300" class="features__content-item_img" src="images/features-content-2.jpg"
+                alt="Oculus" />
+              <div class="features__content-box">
+                <h3>Graphics</h3>
+                <p>
+                  With 1832 x 1920 pixels per eye everything from multiplayer
+                  games and productivity apps to 360 0 videos look beyond
+                  incredible
+                </p>
+              </div>
+              <div class="features__video">
+                <button>
+                  <img src="images/Play.svg" alt="Play icon" />
+                </button>
+                <span>Watch the video</span>
+              </div>
             </div>
-            <div class="box__item">
-              <img src="images/box-4.jpg" alt="Oculus kit" />
-              <p class="box__item-text">Glasses Spacer</p>
+            <div class="features__content-item" id="content-5">
+              <img class="features__content-item_img" src="images/features-content.jpg" alt="Oculus" />
+              <div class="features__content-box">
+                <h3>Graphics</h3>
+                <p>
+                  With 1832 x 1920 pixels per eye everything from multiplayer
+                  games and productivity apps to 360 0 videos look beyond
+                  incredible
+                </p>
+              </div>
+              <div class="features__video">
+                <button>
+                  <img src="images/Play.svg" alt="Play icon" />
+                </button>
+                <span>Watch the video</span>
+              </div>
+            </div>
+            <div class="features__content-item" id="content-6">
+              <img width="580" height="300" class="features__content-item_img" src="images/features-content-2.jpg"
+                alt="Oculus" />
+              <div class="features__content-box">
+                <h3>Graphics</h3>
+                <p>
+                  With 1832 x 1920 pixels per eye everything from multiplayer
+                  games and productivity apps to 360 0 videos look beyond
+                  incredible
+                </p>
+              </div>
+              <div class="features__video">
+                <button>
+                  <img src="images/Play.svg" alt="Play icon" />
+                </button>
+                <span>Watch the video</span>
+              </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </div>
+    </section>
+
+    <section class="games">
+      <div class="games__container container">
+        <h2 class="games__title section-title">GAMES</h2>
+        <div class="games__wrapper">
+          <div class="games__desc">
+            <p class="games__desc-title">It’s all fun and games</p>
+            <p class="games__desc-text">
+              Discover new adventures, master epic challenges or revisit
+              classic moments in your favourite games and experiences
+            </p>
+            <a href="#" class="games__link">SEE ALL GAMES</a>
+          </div>
+          <div class="games__item">
+            <img class="games__img" src="images/games-1.jpg" alt="A game picture" />
+            <h3 class="games__item-title">Blade & Sorcery: Nomad</h3>
+            <p class="games__item-text">
+              Step into a medieval fantasy <br />sandbox that uses phisics to
+              serve up some of the most realistic combat in VR
+            </p>
+            <a class="games__item-link">see more</a>
+          </div>
+          <div class="games__item">
+            <img class="games__img" src="images/games-2.jpg" alt="A game picture" />
+            <h3 class="games__item-title">Population: One</h3>
+            <p class="games__item-text">
+              Climb anything. Fight everywhere. Experience battle royale only
+              possible in VR
+            </p>
+            <a class="games__item-link">see more</a>
+          </div>
+          <div class="games__item">
+            <img class="games__img" src="images/games-3.jpg" alt="A game picture" />
+            <h3 class="games__item-title">Supernatural</h3>
+            <p class="games__item-text">
+              Box, Flow, Meditate and Stretch with real coaches in stunning
+              destinations from around the world. Enjoy new workouts every
+              day.
+            </p>
+            <a class="games__item-link">see more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="buy">
+      <p class="buy__bg">OCULUS</p>
+      <img class="buy__img" src="images/mask.png" alt="Oculus mask" />
+      <button class="buy__btn buy-btn">
+        <span class="buy-btn__text">BUY NOW</span>
+        <span class="buy-btn__price">399,99 USD</span>
+      </button>
+      <p class="buy__text buy-text">Meta Quest 2 is for ages 13+</p>
+    </div>
+    </div>
+    <section class="box">
+      <div class="container">
+        <h2 class="box__title section-title">in the box</h2>
+        <div class="box__wrapper">
+          <div class="box__item box__item_one">
+            <img src="images/box-1.jpg" alt="Oculus kit" />
+            <p class="box__item-text">VR Headset</p>
+          </div>
+          <div class="box__item">
+            <img src="images/box-2.jpg" alt="Oculus kit" />
+            <p class="box__item-text">Two Touch Controllers & AA Batteries</p>
+          </div>
+          <div class="box__item">
+            <p class="box__item-title box-item-title">What's included</p>
+          </div>
+          <div class="box__item">
+            <img src="images/box-3.jpg" alt="Oculus kit" />
+            <p class="box__item-text">Charging Cable & Power Adapter</p>
+          </div>
+          <div class="box__item">
+            <img src="images/box-4.jpg" alt="Oculus kit" />
+            <p class="box__item-text">Glasses Spacer</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--                    Promo             -->
-    <!-- <div class="promo">
-        <div class="container">
-          <div class="promo__wrapper">
-            <button class="promo__btn">go</button>
-          </div>
+    <div class="promo">
+      <div class="container">
+        <div class="promo__wrapper">
+          <button class="promo__btn">go</button>
         </div>
-      </div> -->
+      </div>
+    </div>
 
     <!--                 End  of Promo             -->
 
-    <!-- <section class="accessories">
-        <div class="container">
-          <h2 class="accessories__title section-title">ACCESSORIES</h2>
-          <p class="accessories__item-title box-item-title">
-            Personalize every experience
-          </p>
-          <div class="accessories__wrapper">
-            <div class="accessories-item access-item">
-              <img src="images/access-1.jpg" alt="Oculus items" />
-              <h3 class="access-item__title">Meta Quest 2 Carrying Case</h3>
-              <p class="access-item__text">
-                Protect your system–at home or away.
-              </p>
-              <p class="access-item__price">$59.99 USD</p>
-              <button class="access-item__btn">BUY NOW</button>
-            </div>
-            <div class="accessories-item access-item">
-              <img src="images/access-2.jpg" alt="Oculus items" />
-              <h3 class="access-item__title">Link Cable</h3>
-              <p class="access-item__text">
-                Harness the power of your PC with this premium fiber-optic<br />cable.
-              </p>
-              <p class="access-item__price">$79.99 USD</p>
-              <button class="access-item__btn">BUY NOW</button>
-            </div>
-            <div class="accessories-item access-item">
-              <img src="images/access-3.jpg" alt="Oculus items" />
-              <h3 class="access-item__title">Meta Quest 2 Active Pack</h3>
-              <p class="access-item__text">
-                A wipeable facial interface, wrist straps, and knuckle straps.
-              </p>
-              <p class="access-item__price">$69.99 USD</p>
-              <button class="access-item__btn">BUY NOW</button>
-            </div>
-            <div class="accessories-item access-item">
-              <img src="images/access-4.jpg" alt="Oculus items" />
-              <h3 class="access-item__title">Meta Quest Gift Cards</h3>
-              <p class="access-item__text">
-                Redeemable on 350+ games and apps.
-              </p>
-              <p class="access-item__price">$15 - 50 USD</p>
-              <button class="access-item__btn">BUY NOW</button>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-    <!-- <section class="contacts">
-        <div class="container">
-          <h2 class="contacts__title">Get news and updates</h2>
-          <div class="contacts__wrapper">
-            <div class="contacts__wrapper-form">
-              <form class="contacts__form" action="">
-                <input
-                  class="contacts__input"
-                  placeholder="E-mail"
-                  type="text"
-                />
-                <button class="contacts__btn" type="submit">go</button>
-              </form>
-              <p class="contacts__text">
-                By signing up you agree to receive updates and marketing
-                messages (e.g. email, social, etc.) from Meta about Meta’s
-                existing and future products and services.<br />
-                You may withdraw your consent and unsubscribe at any time by
-                clicking the unsubscribe link included in our messages.<br />
-                Your subscription is subject to the Terms and Privacy Policy.
-              </p>
-            </div>
-            <a class="contacts__email-link" href="mailto:oculusshop@gmail.com"
-              >oculusshop@gmail.com</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
+    <section class="accessories">
       <div class="container">
-        <nav class="nav">
-          <ul class="menu">
-            <li class="menu__list"><a href="#" class="menu__link">SHOP</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">GAMES</a></li>
-            <li class="menu__list">
-              <a href="#" class="menu__link">METAVERSE</a>
-            </li>
-            <li class="menu__list">
-              <a href="#" class="menu__link">CONTACT US</a>
-            </li>
-          </ul>
-          <a href="#" class="logo">
-            <img src="images/logo.svg" alt="Logo" />
-          </a>
-          <ul href="#" class="footer__social">
-            <li class="footer__menu-item">
-              <a class="footer__link" href="">
-                <img src="images/youtube.svg" alt="Youtube icon" />
-              </a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__link" href="">
-                <img src="images/facebook.svg" alt="Facebook icon" />
-              </a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__link" href="">
-                <img src="images/inst.svg" alt="Instagram icon" />
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <h2 class="accessories__title section-title">ACCESSORIES</h2>
+        <p class="accessories__item-title box-item-title">
+          Personalize every experience
+        </p>
+        <div class="accessories__wrapper">
+          <div class="accessories-item access-item">
+            <img src="images/access-1.jpg" alt="Oculus items" />
+            <h3 class="access-item__title">Meta Quest 2 Carrying Case</h3>
+            <p class="access-item__text">
+              Protect your system–at home or away.
+            </p>
+            <p class="access-item__price">$59.99 USD</p>
+            <button class="access-item__btn">BUY NOW</button>
+          </div>
+          <div class="accessories-item access-item">
+            <img src="images/access-2.jpg" alt="Oculus items" />
+            <h3 class="access-item__title">Link Cable</h3>
+            <p class="access-item__text">
+              Harness the power of your PC with this premium fiber-optic<br />cable.
+            </p>
+            <p class="access-item__price">$79.99 USD</p>
+            <button class="access-item__btn">BUY NOW</button>
+          </div>
+          <div class="accessories-item access-item">
+            <img src="images/access-3.jpg" alt="Oculus items" />
+            <h3 class="access-item__title">Meta Quest 2 Active Pack</h3>
+            <p class="access-item__text">
+              A wipeable facial interface, wrist straps, and knuckle straps.
+            </p>
+            <p class="access-item__price">$69.99 USD</p>
+            <button class="access-item__btn">BUY NOW</button>
+          </div>
+          <div class="accessories-item access-item">
+            <img src="images/access-4.jpg" alt="Oculus items" />
+            <h3 class="access-item__title">Meta Quest Gift Cards</h3>
+            <p class="access-item__text">
+              Redeemable on 350+ games and apps.
+            </p>
+            <p class="access-item__price">$15 - 50 USD</p>
+            <button class="access-item__btn">BUY NOW</button>
+          </div>
+        </div>
       </div>
-    </footer> -->
+    </section>
 
-    <script src="js/main.js"></script>
-  </body>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Get news and updates</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__wrapper-form">
+            <form class="contacts__form" action="">
+              <input class="contacts__input" placeholder="E-mail" type="text" />
+              <button class="contacts__btn" type="submit">go</button>
+            </form>
+            <p class="contacts__text">
+              By signing up you agree to receive updates and marketing
+              messages (e.g. email, social, etc.) from Meta about Meta’s
+              existing and future products and services.<br />
+              You may withdraw your consent and unsubscribe at any time by
+              clicking the unsubscribe link included in our messages.<br />
+              Your subscription is subject to the Terms and Privacy Policy.
+            </p>
+          </div>
+          <a class="contacts__email-link" href="mailto:oculusshop@gmail.com">oculusshop@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav nav">
+        <ul class="menu">
+          <li class="menu__list"><a href="#" class="menu__link">SHOP</a></li>
+          <li class="menu__list"><a href="#" class="menu__link">GAMES</a></li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">METAVERSE</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">CONTACT US</a>
+          </li>
+        </ul>
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="Logo" />
+        </a>
+        <ul href="#" class="footer__social">
+          <li class="footer__menu-item">
+            <a class="footer__link" href="">
+              <img src="images/youtube.svg" alt="Youtube icon" />
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__link" href="">
+              <img src="images/facebook.svg" alt="Facebook icon" />
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__link" href="">
+              <img src="images/inst.svg" alt="Instagram icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
