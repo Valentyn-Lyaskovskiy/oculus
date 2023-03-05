@@ -29,13 +29,9 @@ buttons.forEach((item) => {
 });
 
 const burgerIcon = document.querySelector('.burger');
-const changeIcon = function () {
-  burgerIcon.classList.toggle('burger_open');
-};
-burgerIcon.addEventListener('click', changeIcon);
-
-const nav = document.querySelector('.nav');
-const changeNav = function () {
+const nav = document.querySelector('.header');
+const openNav = function () {
   nav.classList.toggle('nav_active');
 };
-burgerIcon.addEventListener('click', changeNav);
+
+burgerIcon.addEventListener('click', openNav);

@@ -12,9 +12,13 @@
   font-weight: 700;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 *,
@@ -64,6 +68,7 @@ button {
 /*     Header    */
 
 .header {
+  position: relative;
   border-bottom: 1px solid #cacad6;
 }
 
@@ -631,7 +636,15 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  height: 80px;
+}
+
+.footer__menu {
+  gap: 20px;
+  display: flex;
+}
+
+.footer__logo {
+  justify-self: center;
 }
 
 .footer__social {

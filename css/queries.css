@@ -4,15 +4,22 @@
     left: 0;
     right: 0;
     top: 10px;
+    background-color: #fff;
     transform: translateY(-500px);
+    pointer-events: none;
+    visibility: hidden;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     transition: all 1s ease;
+    opacity: 0;
   }
 
-  .nav.nav_active {
+  .nav_active nav {
     transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
   }
 
   .logo {
@@ -29,6 +36,10 @@
     justify-self: center;
   }
 
+  .nav_active .basket_on span:nth-child(2) {
+    display: flex;
+  }
+
   .burger span:last-child {
     margin-bottom: 0;
   }
@@ -38,20 +49,20 @@
     width: 100%;
     height: 2px;
     background-color: #5c5c5e;
-    transition: all 1s ease;
+    transition: all 0.8s ease;
     margin-bottom: 4px;
   }
 
-  .burger_open span:nth-child(1) {
+  .nav_active span:nth-child(1) {
     transform: rotate(45deg);
     margin-bottom: -2px;
   }
 
-  .burger_open span:nth-child(2) {
+  .nav_active span:nth-child(2) {
     display: none;
   }
 
-  .burger_open span:nth-child(3) {
+  .nav_active span:nth-child(3) {
     transform: rotate(-45deg);
   }
 }
