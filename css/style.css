@@ -285,6 +285,7 @@ button {
 .features__content-item_img {
   align-self: stretch;
   grid-row: 1/-1;
+  object-fit: cover;
 }
 
 .features__content-item_active {
