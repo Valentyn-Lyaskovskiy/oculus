@@ -657,7 +657,8 @@ button {
   margin-right: 20px;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.menu-footer__link:hover {
   text-decoration: underline;
 }
 
