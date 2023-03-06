@@ -1,4 +1,8 @@
 @media (max-width: 1000px) {
+  .box__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .features__tabs {
     display: block;
   }
@@ -115,12 +119,24 @@
     font-size: 26px;
   }
 
-  .buy__bg{
+  .buy__bg {
     font-size: 300px;
   }
 }
 
 @media (max-width: 622px) {
+  .box-item-title {
+    font-size: 32px;
+  }
+
+  .box__item {
+    order: -1;
+  }
+
+  .box__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .games__wrapper {
     padding-top: 100px;
   }
@@ -150,6 +166,18 @@
 }
 
 @media (max-width: 478px) {
+  .box__item img {
+    width: 100%;
+  }
+
+  .box__item-text {
+    margin: 20px 10px;
+  }
+  
+  .box__wrapper {
+    display: block;
+  }
+
   .games__wrapper {
     padding-top: 50px;
   }
